@@ -1,27 +1,25 @@
 <template>
   <div id="app">
-    <h3>safdsafasfdf</h3>
-<!--    <HelloWorld msg="Welcome to Your Vue.js App"/>-->
+    <router-view></router-view>
+    <MainTarBar></MainTarBar>
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
-// import aa from "src/common/const.js"
-export default {
-  name: 'App',
-  components: {
-    // HelloWorld
+  import MainTarBar from "../src/components/mainTabbar/MainTabBar"
+  export default {
+    name: 'App',
+    components: {
+      MainTarBar
+    }
   }
-}
 </script>
 
 <style>
   @import "assets/css/base.css";
 
 
+  #app {
 
-#app {
-
-}
+  }
 </style>
