@@ -6,7 +6,7 @@
 </template>
 
 <script>
-  import MainTarBar from "../src/components/mainTabbar/MainTabBar"
+  import MainTarBar from "components/mainTabbar/MainTabBar"
   export default {
     name: 'App',
     components: {
