@@ -7,7 +7,7 @@
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-
+// import aa from "src/common/const.js"
 export default {
   name: 'App',
   components: {
@@ -17,6 +17,10 @@ export default {
 </script>
 
 <style>
+  @import "assets/css/base.css";
+
+
+
 #app {
 
 }
