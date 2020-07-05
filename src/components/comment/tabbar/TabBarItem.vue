@@ -26,9 +26,10 @@
       isActive() {
         // /home -> item1(/home) = true
         // /home -> item1(/category) = false
-        // /home -> item1(/cart) = true
-        // /home -> item1(/profile) = true
-        return this.$route.path.indexOf(this.path) !== -1
+        // /home -> item1(/cart) = false
+        // /home -> item1(/profile) = false
+        // console.log("safd",this.$route.path,this.path)
+        return this.$route.path==this.path
       },
       activeStyle() {
         return this.isActive ? {color: this.activeColor} : {}
@@ -36,7 +37,7 @@
     },
     methods: {
       itemClick() {
-        this.$router.replace(this.path)
+        this.$router.push(this.path)
       }
     }
   }
