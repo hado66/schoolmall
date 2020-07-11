@@ -15,16 +15,16 @@
 
 <style scoped>
   .nav-bar {
+    display: flex;
+  }
+  .nav-bar div {
     height: 49px;
     line-height: 49px;
-    display: flex;
   }
   .left .right{
     width: 49px;
   }
-  /*.right {*/
-  /*  width: 49px;*/
-  /*}*/
+
   .center {
     background-color: red;
     flex: 1;
